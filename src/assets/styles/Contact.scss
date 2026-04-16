@@ -1,0 +1,65 @@
+.contact-minimal {
+  padding: 50px 0 80px 0;  // 🔥 reduced top gap
+  text-align: center;
+
+  .contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* 🔥 MAIN BUTTON */
+  .contact-main-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 26px;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.06);
+    color: #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(6px);
+
+    transition: all 0.3s ease;
+  }
+
+  .contact-main-btn:hover {
+    background: rgba(138, 43, 226, 0.15);
+    border-color: rgba(138, 43, 226, 0.4);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  /* 🔹 SMALL LINKS */
+  .contact-links {
+    margin-top: 18px;
+    font-size: 0.9rem;
+    color: #aaa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #aaa;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #9d4edd;
+    }
+
+    span {
+      color: #555;
+    }
+  }
+}

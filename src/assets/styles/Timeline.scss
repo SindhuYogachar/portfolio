@@ -1,0 +1,50 @@
+/* 🔥 FIX TOP GAP */
+.vertical-timeline {
+    margin-top: 0 !important;
+    padding-top: 10px !important;   // reduced from default
+}
+
+/* 🔥 REMOVE EXTRA GAP FROM FIRST ELEMENT */
+.vertical-timeline-element:first-child {
+    margin-top: 0 !important;
+}
+
+/* 🔹 TEXT STYLING */
+.vertical-timeline span {
+    color: white;
+    font-family: 'Courier Prime', monospace;
+}
+
+.vertical-timeline p,
+.vertical-timeline-element p,
+.vertical-timeline-element h3,
+.vertical-timeline-element h4,
+.vertical-timeline-element span {
+    color: rgb(39, 40, 34);
+}
+
+/* 🔹 DATE TEXT */
+.vertical-timeline-element .vertical-timeline-element-date {
+    color: white;
+}
+
+/* 🔹 ICON COLOR */
+.svg-inline--fa {
+    color: white;
+}
+
+/* 🔥 REDUCE SPACE BETWEEN TIMELINE ITEMS */
+.vertical-timeline-element {
+    margin-bottom: 30px;   // tighter spacing
+}
+
+/* 📱 RESPONSIVE FIX */
+@media screen and (max-width: 1170px) {
+    .vertical-timeline-element .vertical-timeline-element-date {
+        color: rgb(39, 40, 34);
+    }
+
+    .vertical-timeline {
+        padding-top: 5px;   // even tighter on mobile
+    }
+}
